@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sshl/login.dart';
 
 class Registration extends StatefulWidget{
   @override
@@ -120,7 +121,10 @@ class _Registration extends State<Registration>{
           ]
           )
           ),
-          Padding(padding:EdgeInsets.all(10.0),child:Text("Already a member?", style: TextStyle(fontSize: 20.0))),
+         Padding(padding: EdgeInsets.all(4.0),child: GestureDetector(child:Text("Already a member?",style:TextStyle(color:Colors.black,fontSize: 20.0,)),onTap: (){
+            Navigator.push(context,MaterialPageRoute(builder: (context)=>Login()));}
+            )
+            )
         ],
       ))
       )
