@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sshl/registration.dart';
-import 'package:sshl/wakeup.dart';
 import 'package:sshl/splash.dart';
+import 'package:sshl/login.dart';
 void main(){
 
   runApp(FirstSplashScreenMain());
@@ -58,7 +58,7 @@ class Home extends StatelessWidget{
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0))
             ))),
             Padding(padding: EdgeInsets.all(4.0),child: GestureDetector(child:Text("Already a member?",style:TextStyle(color:Colors.black,fontSize: 20.0,)),onTap: (){
-            Navigator.push(context,MaterialPageRoute(builder: (context)=>Wakeup()));}
+            Navigator.push(context,MaterialPageRoute(builder: (context)=>Login()));}
             )
             )
           ],
